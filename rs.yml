@@ -1,0 +1,23 @@
+--- 
+apiVersion: /apps/v1
+kind: ReplicationSet
+metadata:
+  name: dfinlayson-replicaset
+  labels: 
+    app: appdemo-rc
+    dept: testing-rc
+spec: 
+  template:
+    metadata: 
+      name: myapp-pod   
+      labels: 
+        app: myapp-pod
+        labels: FrontEndPod-pod    
+    spec: 
+      containers:
+      - name: nginx-container-pod
+        image: nginx
+  replicas: 3 
+  selector:
+    matchLabels:
+      type: front-end
