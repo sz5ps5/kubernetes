@@ -1,6 +1,6 @@
 --- 
 apiVersion: /apps/v1
-kind: ReplicationSet
+kind: ReplicaSet
 metadata:
   name: dfinlayson-replicaset
   labels: 
