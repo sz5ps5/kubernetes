@@ -17,4 +17,5 @@ spec:
       containers:
       - name: nginx-container-pod
         image: nginx
-        
+  replicas: 3 
+
