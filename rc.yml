@@ -18,4 +18,4 @@ spec:
       - name: nginx-container-pod
         image: nginx
   replicas: 3 
-
+added online
